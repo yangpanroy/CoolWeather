@@ -36,42 +36,42 @@ public class ChooseAreaFragment extends Fragment {
     public static final int LEVEL_CITY = 1;
     public static final int LEVEL_COUNTY = 2;
 
-    ProgressDialog progressDialog;
-    TextView titleText;
-    Button backButton;
-    ListView listView;
-    ArrayAdapter<String> adapter;
-    List<String> dataList = new ArrayList<>();
+    private ProgressDialog progressDialog;
+    private TextView titleText;
+    private Button backButton;
+    private ListView listView;
+    private ArrayAdapter<String> adapter;
+    private List<String> dataList = new ArrayList<>();
 
     /**
      * 省列表
      */
-    List<Province> provinceList;
+    private List<Province> provinceList;
 
     /**
      * 市列表
      */
-    List<City> cityList;
+    private List<City> cityList;
 
     /**
      * 县列表
      */
-    List<County> countyList;
+    private List<County> countyList;
 
     /**
      * 选中的省份
      */
-    Province selectedProvince;
+    private Province selectedProvince;
 
     /**
      * 选中的城市
      */
-    City selectedCity;
+    private City selectedCity;
 
     /**
      * 当前选中的级别
      */
-    int currentLevel;
+    private int currentLevel;
 
     @Nullable
     @Override
